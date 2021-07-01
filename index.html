@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="index.css">
+  <title>Bathroom renovation</title>
+</head>
+<body>
+  <h1>Калькулятор стоимости ремонта</h1>
+  <form action="#" method="post">
+    <div class="form__inputBlock inputBlock sizesBlock">
+      <h2>Параметры помещения ванной</h2>
+      <div>
+        <p>Длина помещения, м</p>
+
+        <input type="number" min="1" max="6" name="lengthNumber" value="1">
+        <input type="range" min="1" max="6" name="lengthRange" value="1">
+      </div>
+      <div>
+        <p>Высота помещения, м</p>
+
+        <input type="number" min="1" max="6" name="lengthNumber" value="1">
+        <input type="range" min="1" max="6" name="lengthRange" value="1">
+      </div>
+      <div>
+        <p>Ширина помещения, м</p>
+
+        <input type="number" min="1" max="6" name="lengthNumber" value="1">
+        <input type="range" min="1" max="6" name="lengthRange" value="1">
+      </div>
+    </div>
+    <div class="form__inputBlock inputBlock podgotovkaBlock">
+      <h2>Подготовительные мероприятия</h2>
+      <div>
+        <p>Этапы подготовки (выбрать нужное)</p>
+
+        <input type="checkbox" name="podgotovka1" id="podgotovka1">
+        <label for="podgotovka1">Cнос перегородки между ванной и туалетом</label>
+
+        <input type="checkbox" name="podgotovka2" id="podgotovka2">
+        <label for="podgotovka2">Демонтаж ванны</label>
+
+        <input type="checkbox" name="podgotovka3" id="podgotovka3">
+        <label for="podgotovka3">Демонтаж умывальника</label>
+
+        <input type="checkbox" name="podgotovka4" id="podgotovka4">
+        <label for="podgotovka4">Демонтаж унитаза</label>
+
+        <input type="checkbox" name="podgotovka5" id="podgotovka5">
+        <label for="podgotovka5">Демонтаж душевой кабины</label>
+
+        <input type="checkbox" name="podgotovka6" id="podgotovka6">
+        <label for="podgotovka6">Прокладка новых водопроводных труб (полипропилен), «уголковая» схема</label>
+
+        <input type="checkbox" name="podgotovka7" id="podgotovka7">
+        <label for="podgotovka7">Замена (установка) канализационного стояка 100 мм</label>
+
+        <input type="checkbox" name="podgotovka8" id="podgotovka8">
+        <label for="podgotovka8">Замена (установка) новой канализационной разводки 50 мм</label>
+
+        <input type="checkbox" name="podgotovka9" id="podgotovka9">
+        <label for="podgotovka9">Монтаж водомеров (2 шт)</label>
+
+        <input type="checkbox" name="podgotovka10" id="podgotovka10">
+        <label for="podgotovka10">Монтаж редукторов давления (2 шт)</label>
+
+        <input type="checkbox" name="podgotovka11" id="podgotovka11">
+        <label for="podgotovka11">Монтаж фильтров грубой очистки (2 шт)</label>
+      </div>
+    </div>
+    <div class="form__inputBlock inputBlock polBlock">
+      <h2>Отделка пола</h2>
+      <div>
+        <p>Нужен ли демонтаж старого покрытия?</p>
+        <input type="checkbox" name="pol1" value="Да, с демонтажем и подготовкой основания под облицовку" id="pol1">
+        <label for="pol1">Да, с демонтажем и подготовкой основания под облицовку</label>
+      </div>
+      <div>
+        <p>Примерный тип плитки</p>
+
+        <input type="radio" name="plitka" id="plitka1">
+        <label for="plitka1" class="econom">Плитка эконом-класса отечественного производства</label>
+
+        <input type="radio" name="plitka" id="plitka2">
+        <label for="plitka2" class="normal">Плитка среднего класса</label>
+
+        <input type="radio" name="plitka" id="plitka3">
+        <label for="plitka3" class="elite">Плитка класса люкс</label>
+      </div>
+      <div>
+        <p>Способ укладки плитки</p>
+
+        <input type="radio" name="ykladka" id="ykladka1">
+        <label for="ykladka1">Обычная укладка</label>
+
+        <input type="radio" name="ykladka" id="ykladka2">
+        <label for="ykladka2">Укладка по диагонали</label>
+
+        <input type="radio" name="ykladka" id="ykladka3">
+        <label for="ykladka3">Укладка с подбором рисунка</label>
+
+        <input type="radio" name="ykladka" id="ykladka4">
+        <label for="ykladka4">Укладка мозаичной плитки</label>
+      </div>
+      <div>
+        <p>Нужет ли теплый пол на основе сетчатых матов</p>
+
+        <input type="checkbox" name="tepliy" value="Да" id="tepliy1">
+        <label for="tepliy1">Да</label>
+      </div>
+    </div>
+    <div class="form__inputBlock inputBlock steniBlock">
+      <h2>Отделка стен</h2>
+      <div>
+        <p>Подготовка стен к облицовке</p>
+        <input type="radio" name="oblicovka" id="oblicovka1">
+        <label for="oblicovka1">Обычный цикл подготовки (зачистка, грунтовка)</label>
+
+        <input type="radio" name="oblicovka" id="oblicovka2">
+        <label for="oblicovka2">То же, с демонтажем старого покрытия</label>
+
+        <input type="radio" name="oblicovka" id="oblicovka3">
+        <label for="oblicovka3">С полной маскировкой коммуникаций в стене</label>
+      </div>
+      <div>
+        <p>Примерный тип плитки</p>
+        <input type="radio" name="tipPlitki" id="tipPlitki1">
+        <label for="tipPlitki1" class="econom">Плитка эконом-класса отечественного производителя</label>
+
+        <input type="radio" name="tipPlitki" id="tipPlitki2">
+        <label for="tipPlitki2" class="normal">Плитка среднего класса</label>
+
+        <input type="radio" name="tipPlitki" id="tipPlitki3">
+        <label for="tipPlitki3" class="elite">Плитка класса люкс</label>
+      </div>
+      <div>
+        <p>Способ укладки плитки</p>
+        <input type="radio" name="sposobYkladki" id="sposobYkladki1">
+        <label for="sposobYkladki1">Обычная укладка</label>
+
+        <input type="radio" name="sposobYkladki" id="sposobYkladki2">
+        <label for="sposobYkladki2">Обычная укладка со вставкой фризов и бордюров</label>
+
+        <input type="radio" name="sposobYkladki" id="sposobYkladki3">
+        <label for="sposobYkladki3">Укладка с подбором рисунка и вставкой панно</label>
+
+        <input type="radio" name="sposobYkladki" id="sposobYkladki4">
+        <label for="sposobYkladki4">Укладка мозаичной плитки</label>
+      </div>
+      <div>
+        <p>Короб маскировки коммуникаций и ревизионный сантехнический люк</p>
+        <input type="radio" name="korob" id="korob1">
+        <label for="korob1">Нет</label>
+
+        <input type="radio" name="korob" id="korob2">
+        <label for="korob2">С обычным пластиковым люком-дверцей</label>
+
+        <input type="radio" name="korob" id="korob3">
+        <label for="korob3">Со скрытым сьёмным люком под плитку</label>
+
+        <input type="radio" name="korob" id="korob4">
+        <label for="korob4">Со сдвижным скрытым люком под плитку</label>
+      </div>
+    </div>
+    <div class="form__inputBlock inputBlock potolokBlock">
+      <h2>Отделка потолка</h2>
+      <div>
+        <p>Тип потолка</p>
+        <input type="radio" name="tipPotolka" id="tipPotolka1">
+        <label for="tipPotolka1">Реечный, обычный монтаж</label>
+
+        <input type="radio" name="tipPotolka" id="tipPotolka2">
+        <label for="tipPotolka2">Реечный, диагональный монтаж</label>
+
+        <input type="radio" name="tipPotolka" id="tipPotolka3">
+        <label for="tipPotolka3">Панели ПВХ, обычный монтаж</label>
+
+        <input type="radio" name="tipPotolka" id="tipPotolka4">
+        <label for="tipPotolka4">Панели ПВХ, диагональный монтаж</label>
+
+        <input type="radio" name="tipPotolka" id="tipPotolka5">
+        <label for="tipPotolka5">Натяжной эконом-класса</label>
+
+        <input type="radio" name="tipPotolka" id="tipPotolka6">
+        <label for="tipPotolka6">Натяжной среднего класса</label>
+
+        <input type="radio" name="tipPotolka" id="tipPotolka7">
+        <label for="tipPotolka7">Натяжной класса люкс</label>
+      </div>
+      <div>
+        <p>Количество встраиваемых потолочных светильников</p>
+        <input type="number" min="1" max="12" value="1" name="svetCountNumber">
+        <input type="range" min="1" max="12" value="1" name="svetCountRange">
+      </div>
+    </div>
+    <input type="submit" name="submit" value="Отправить">
+  </form>
+</body>
+<script src="index.js" charset="utf-8"></script>
+</html>

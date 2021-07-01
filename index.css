@@ -1,0 +1,154 @@
+body {
+  font-family: Open Sans;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 800px;
+  margin: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 3px solid #000;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 5px;
+  margin-bottom: 100px;
+}
+
+.sizesBlock {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: #4C4C6D;
+  color: #fff;
+}
+
+
+.podgotovkaBlock {
+  background: #B8DFD8;
+}
+
+.polBlock {
+  background: #CDF0EA;
+}
+
+.steniBlock {
+  background: #E8F6EF;
+}
+
+.potolokBlock {
+  background: #FFE194;
+}
+
+.inputBlock {
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.inputBlock>h2 {
+  font-size: 28px;
+  text-align: center;
+  border-bottom: 2px solid #4C4C6D;
+  padding-bottom: 10px;
+}
+.sizesBlock>h2 {
+border-bottom: 2px solid #ffffff;
+}
+
+.inputBlock>div {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inputBlock>div>p {
+  width: 100%;
+  font-size: 24px;
+}
+
+.inputBlock>div>input[type=number] {
+  border: 1px solid #fff;
+  font-size: 21px;
+  border-radius: 5px;
+}
+
+.inputBlock>div>input[type=range] {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.inputBlock>div>input[type=checkbox],
+.inputBlock>div>input[type=radio] {
+  display: none;
+}
+
+.inputBlock>div>input[type=checkbox]:checked + label,
+.inputBlock>div>input[type=radio]:checked + label {
+  background: #4C4C6D;
+  color: #fff;
+}
+
+.inputBlock>div>input[type=radio]:checked + label.econom {
+  background: grey;
+  color: #fff;
+}
+
+.inputBlock>div>input[type=radio]:checked + label.normal {
+  background: green;
+  color: #fff;
+}
+
+.inputBlock>div>input[type=radio]:checked + label.elite {
+  background: purple;
+  color: #fff;
+}
+
+.inputBlock>div>input[type=radio] + label {
+  border-radius: 15px;
+}
+
+.inputBlock>div>label {
+  border: 1px solid #4C4C6D;
+  color: #000;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  margin: 5px;
+  flex-grow: 1;
+  text-align: center;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.inputBlock>div>label.econom {
+  border: 2px solid grey;
+}
+
+.inputBlock>div>label.normal {
+  border: 2px solid green;
+}
+
+.inputBlock>div>label.elite {
+  border: 2px solid purple;
+}
+
+form>input[type=submit] {
+  width: 100%;
+  border: 3px solid #4C4C6D;
+  background: #4C4C6D;
+  color: #fff;
+  font-size: 24px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+form>input[type=submit]:hover {
+  background: #5C4C6D;
+}
